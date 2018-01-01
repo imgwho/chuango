@@ -76,4 +76,11 @@
   70%{opacity:1;}
   100%{-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);opacity:0;}
 }
+
+@keyframes mypulse {
+  0%{-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
+  50%{-webkit-transform: scale3d(1.2, 1.2, 1.2);transform: scale3d(1.1, 1.1, 1.1);}
+  100%{-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);opacity: 1;}
+}
+
 .flayer{display:none;}

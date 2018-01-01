@@ -26,11 +26,12 @@ body{margin:0;padding:0;border:none;font-family:Arial;-webkit-text-size-adjust:n
 .groups .animate{opacity:0;}
 .groups > div{position:absolute;font-size:15px;line-height:22px; font-weight:bold;}
 #frame0{background:url(images/01.jpg) no-repeat center center;background-size:100%;}
-.img00{width:100%;height:300px;background:url(images/01_1.png) no-repeat center center;background-size:350px;top:20vh;}
-.img01{width:100%;height:118px;background:url(images/01_2.png) no-repeat center center;background-size:50px;top:44vh;}
-.img02{width:100%;height:397px;background:url(images/01_3.png) no-repeat center center;background-size:250px;top:48vh; left: 27vw;}
+.img00{width:100%;height:300px;background:url(images/01_1.png) no-repeat center center;background-size:350px;top:50%;margin: -30vh 0;}
+.img01{z-index:2; width:100%;height:118px;background: url(images/01_2.png) no-repeat center top;background-size:50px;top:50%;margin-top:
+calc(-30vh + 195px);}
+.img02{animation: fadeout 2s ease-in-out ; width:100%;height:397px;background: url(images/01_3.png) no-repeat center top;background-size:250px;top:50%;margin-left:110px;margin-top: calc(-30vh + 205px);}
 .img03{width:100%;height:397px;background:url(images/01_4.png) no-repeat center center;background-size:300px;bottom:-118px; left: 14px;}
-#frame1{background:url(images/02.jpg) no-repeat center top;background-size:100%;}
+#frame1{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
 .line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
 .airplane{position: absolute;width: 36%;animation: goto 2s ease-in-out;left: 214px; top: 242px;}
 
@@ -42,6 +43,17 @@ body{margin:0;padding:0;border:none;font-family:Arial;-webkit-text-size-adjust:n
   }
   to {
     transform: none;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    transform: translateY(150px);
+    opacity: 0
+  }
+  to {
+    transform: none;
+    opacity: 1;
   }
 }
 
@@ -57,6 +69,8 @@ body{margin:0;padding:0;border:none;font-family:Arial;-webkit-text-size-adjust:n
 .img3-4{position: absolute; width:50%;top:288px;left:36px;}
 .img3-5{position: absolute; width:40%;top:291px;left:201px;}
 .img3-6{position: absolute; width:50%;top:400px;left:45px;}
+.hide{opacity:0;}
+
 .watch{position: absolute; width:100px;height: 100px;background:url(images/watch.png) no-repeat;background-size:100%;bottom: 98px;left:152px;}
 
 #frame4{background:url(images/04.png) no-repeat center top;background-size:100%;}
@@ -179,12 +193,13 @@ div#loading{margin:15px auto 0;}
   <div id="frame1" index="1" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
-      <img src="./images/03_1.png" class="img3-1" />
-      <img src="./images/03_2.png" class="img3-2" />
-      <img src="./images/03_3.png" class="img3-3" />
-      <img src="./images/03_4.png" class="img3-4" />
-      <img src="./images/03_5.png" class="img3-5" />
-      <img src="./images/03_6.png" class="img3-6" />
+      <img src="./images/03_1.png" class="img3-1 hide flayerbtn" layerid="frame101" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
+      <img src="./images/03_2.png" class="img3-2 hide" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
+      <img src="./images/03_3.png" class="img3-3 hide" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
+      <img src="./images/03_4.png" class="img3-4 hide" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
+      <img src="./images/03_5.png" class="img3-5 hide" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
+      <img src="./images/03_6.png" class="img3-6 hide" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
+      
       <div class="watch EasySlide-animate flayerbtn" in="fadeInDown" delay="1s" duration=".5s" layerid="frame6l2" id="desktopAlbum"></div>
       <div class="EasySlide-flayer flayer shareLayer" id="frame6l2" EasySlide-triggerLayer="desktopAlbum">
         <img src="./images/new.png" class="newyear" />
@@ -244,10 +259,10 @@ div#loading{margin:15px auto 0;}
     wrapAll: "wrapAll",
     subpptObjects: [{
       wrapDiv: "subppt1",
- imgs: ["images/511.png", "images/512.png", "images/513.png", "images/521.png", "images/521.png", "images/522.png", "images/523.png",
-"images/531.png", "images/532.png", "images/533.png", "images/541.png", "images/551.png", "images/552.png", "images/553.png",
-"images/561.png", "images/562.png", "images/563.png"],
-      parentNum: 3
+      imgs: ["images/511.png", "images/512.png", "images/513.png", "images/521.png", "images/521.png", "images/522.png", "images/523.png",
+      "images/531.png", "images/532.png", "images/533.png", "images/541.png", "images/551.png", "images/552.png", "images/553.png",
+      "images/561.png", "images/562.png", "images/563.png"],
+      parentNum: 1
     }]
   });
 
