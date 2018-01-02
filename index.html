@@ -298,6 +298,7 @@ calc(-30vh + 195px);}
     //     parentNum: 5
     //   }]
     // })
+  
 
     new EasySlide({
       wrapAll: "wrapAll",
@@ -334,6 +335,7 @@ calc(-30vh + 195px);}
 
   page.on('loaded',function(){
     utils.hide(utils.$('loadingWrap'));
+    page.renderSlide();
   });
 
   page.on('slide-switchEnd',function(allowswipe){
