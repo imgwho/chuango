@@ -18,7 +18,20 @@ body{margin:0;padding:0;border:none;font-family:Arial;-webkit-text-size-adjust:n
 50%{-webkit-transform:translate3d(0,-15px,0);opacity:1;}
 100%{-webkit-transform:translate3d(0,-25px,0);opacity:0;}
 }
+.back-icon{width:54px;height:31px;bottom:40px;right:0;background:url(images/back.png) no-repeat;background-size:100%;}
 #arrow{width:100%;position:absolute;bottom:0;height:35px;background:url(images/arrow.png) center center no-repeat;background-size:37px;animation:bottomArrow 1.5s ease infinite;}
+
+div#loading{margin:15px auto 0;}
+.shareImgWrap{display:none;}
+
+#weixin_bg{position:absolute;left:0;top:0;width:100%;height:100%;z-index:998;background:rgba(0,0,0,.6);display:none;}
+.share_icon{clear:both; padding:10px; text-align:right;}
+#loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#060a10;}
+#loadingWrap div{margin:170px auto 0; text-align:center;}
+
+#panda-img{position: absolute;left:10%;top: 6%;width: 80%;}
+#gif{position: absolute;left: 45%;top: 50vh;}
+#load-text{position: absolute;left:30%;top: 62%;color: #000;margin: 0;}
 
 #wrapAll{position:relative; overflow:hidden;}
 #wrapAll > .slides{width:100%; height:100%; position:absolute; top:0; left:0; -webkit-transition:-webkit-transform 0.5s ease; overflow:hidden;}
@@ -32,36 +45,20 @@ calc(-30vh + 195px);}
 .img02{animation: fadeout 2s ease-in-out ; width:100%;height:397px;background: url(images/01_3.png) no-repeat center top;background-size:250px;top:50%;margin-left:110px;margin-top: calc(-30vh + 205px);}
 .img03{width:100%;height:98px;background:url(images/01_4.png) no-repeat center center;background-size:300px;bottom:30px; left: 14px;}
 #frame1{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
-.line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
-.airplane{position: absolute;width: 36%;animation: goto 2s ease-in-out;left: 214px; top: 242px;}
 
+.shareBtns{width:100%;}
+.shareBtns > div{border:1px solid #f3c178;color:#f3c178;text-align:center;padding:5px;margin:5px 0;font-size:14px;background:rgba(255,255,255,.1);}
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.flayer{display:none;}
+.narrowLayer{width:85%;left:7.5%;height:100%;box-sizing:border-box;padding:50px 0 40px;}
+.flayerInner{background:-webkit-gradient(linear,left top,left bottom, from(rgba(125,134,158,0)),color-stop(0.15,rgba(125,134,158,1)),color-stop(0.8,rgba(125,134,158,1)),to(rgba(125,134,158,0)));height:100%;}
 
-@keyframes goto {
-  from {
-    left: 65px;
-    top: 386px;
-  }
-  to {
-    transform: none;
-  }
-}
+.shareLayer, #chuanzhi, #chuanjiu, #chuancha, #chuansi, #chuanguo, #chuanwei{width:100%;height:100%;background:#060a10 url(images/03.jpg) no-repeat center top;background-size:100%;display:none;}
+.shareLayer > div{position:absolute;}
 
-@keyframes fadeout {
-  from {
-    transform: translateY(150px);
-    opacity: 0
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
-#frame2{background:url(images/P3.png) no-repeat center top;background-size:100%;}
-.click{border-radius: 50%;width: 100px;height: 100px;bottom: 95px;left: 135px;}
 
 /* 菜单页面 */
-#frame3{background:url(images/02.jpg) no-repeat center top;background-size:100%;}
 .newyear{position: absolute;width: 80%; transform:scale(.8);left: 50px;bottom: 37px;}
 .img3-1{position: absolute; width:81%;top:25px;left:41px;}
 .img3-2{position: absolute; width:40%;top:142px;left:46px;}
@@ -73,49 +70,23 @@ calc(-30vh + 195px);}
 
 .watch{position: absolute; width:100px;height: 100px;background:url(images/watch.png) no-repeat;background-size:100%;bottom: 98px;left:152px;}
 
-#frame4{background:url(images/04.png) no-repeat center top;background-size:100%;}
-#frame5{background:url(images/05.png) no-repeat center top;background-size:100%;}
+/* 地图 #frame3{background:url(images/02.jpg) no-repeat center top;background-size:100%;} */
+/* 集市 #frame4{background:url(images/04.png) no-repeat center top;background-size:100%;} */
+/* 二维码 #frame5{background:url(images/05.png) no-repeat center top;background-size:100%;} */
 
-.img212{width:50px;height:31px;background:url(images/back.png) no-repeat;background-size:100%;top:90px;left:0;}
 
 
-.shareBtns{width:100%;}
-.shareBtns > div{border:1px solid #f3c178;color:#f3c178;text-align:center;padding:5px;margin:5px 0;font-size:14px;background:rgba(255,255,255,.1);}
-.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
-.clearfix{zoom:1;}
-.flayer{display:none;}
-.narrowLayer{width:85%;left:7.5%;height:100%;box-sizing:border-box;padding:50px 0 40px;}
-.flayerInner{background:-webkit-gradient(linear,left top,left bottom, from(rgba(125,134,158,0)),color-stop(0.15,rgba(125,134,158,1)),color-stop(0.8,rgba(125,134,158,1)),to(rgba(125,134,158,0)));height:100%;}
-.borderL, .borderR{width:1px;height:100%;background:-webkit-gradient(linear,left top,left bottom, from(rgba(243,193,120,0)),color-stop(0.15,rgba(243,193,120,1)),color-stop(0.8,rgba(243,193,120,1)),to(rgba(243,193,120,0)));}
-.borderL{float:left;}
-.borderR{float:right;}
-.text1{padding:40px 25px;color:#fff;font-size:13px;line-height:20px;}
-.contentWrap1{padding:30px 0;}
-.imageWrap1{width:100%;background:#fff;text-align:right;}
-.imageWrap2{width:100%;background:#000;text-align:right;}
-.imageWrap1 img, .imageWrap2 img{width:99%;border:none;display:block;margin:0 auto;}
-.contentWrap2{height:10px;padding:20px;}
-.watchName{float:left;}
-.info{float:right;background:url(images/f2_3.png) no-repeat 0 9px;background-size:17px;padding:5px 0 0 20px;font-size:10px;line-height:11px;color:#fff;width:55px;}
-.text2{padding:20px 25px;color:#fff;font-size:12px;line-height:18px;}
-.shareLayer, #frame6{width:100%;height:100%;background:#060a10 url(images/03.jpg) no-repeat center top;background-size:100%;display:none;}
-.shareLayer > div{position:absolute;}
-.img67{width:54px;height:31px;top:80px;right:0;background:url(images/back.png) no-repeat;background-size:100%;}
-.img69{width:54px;height:31px;bottom:40px;right:0;background:url(images/back.png) no-repeat;background-size:100%;}
-.text3{font-size:12px;color:#fff;line-height:18px;}
-#subppt1{position:absolute;width:100%;top:18%;left:0;}
+.line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
+.airplane{position: absolute;width: 36%;animation: goto 2s ease-in-out;left: 214px; top: 242px;}
+ 
+@keyframes fadeout { from { transform: translateY(150px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-#weixin_bg{position:absolute;left:0;top:0;width:100%;height:100%;z-index:998;background:rgba(0,0,0,.6);display:none;}
-.share_icon{clear:both; padding:10px; text-align:right;}
-#loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#060a10;}
-#loadingWrap div{margin:170px auto 0; text-align:center;}
-
-#panda{position: absolute;left:10%;top: 6%;width: 80%;}
-#gif{position: absolute;left: 45%;top: 50vh;}
-#load-text{position: absolute;left:30%;top: 62%;color: #000;margin: 0;}
-
-div#loading{margin:15px auto 0;}
-.shareImgWrap{display:none;}
+#panda{background:url(./imgs/public/all/bg1.jpg) no-repeat center top;background-size:100%;}
+.p3-img{position: absolute;top: 10%;}
+.p3logo{width: 50%; margin: -9vh 27vw;animation: pulse 1.5s ease 1s infinite normal forwards;}
+.p3panda{width:75%;margin: 22vh 12vw;}
+.p3earth{width: 92%;margin: 19vh 5vw;}
 </style>
 </head>
 <body>
@@ -142,60 +113,99 @@ div#loading{margin:15px auto 0;}
 
   <div id="frame1" index="1" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-      <img src="./images/new.png" class="newyear" />
-      <img src="./images/03_1.png" class="img3-1 hide" goto="6" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
-      <img src="./images/03_2.png" class="img3-2 hide" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
-      <img src="./images/03_3.png" class="img3-3 hide" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
-      <img src="./images/03_4.png" class="img3-4 hide" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
-      <img src="./images/03_5.png" class="img3-5 hide" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
-      <img src="./images/03_6.png" class="img3-6 hide" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
+      <!-- <img src="./images/new.png" class="newyear" /> -->
+      <img src="./images/03_1.png" class="img3-1 hide" goto="2" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
+      <img src="./images/03_2.png" class="img3-2 hide" goto="3" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
+      <img src="./images/03_3.png" class="img3-3 hide" goto="4" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
+      <img src="./images/03_4.png" class="img3-4 hide" goto="5" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
+      <img src="./images/03_5.png" class="img3-5 hide" goto="6" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
+      <img src="./images/03_6.png" class="img3-6 hide" goto="7" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
       
       <!-- <div class="watch EasySlide-animate flayerbtn" in="fadeInDown" delay="1s" duration=".5s" layerid="frame6l2" id="desktopAlbum"></div>
       <div class="EasySlide-flayer flayer shareLayer" id="frame6l2" EasySlide-triggerLayer="desktopAlbum">
         <img src="./images/new.png" class="newyear" />
         <div id="subppt1"></div>
-        <div class="img69"></div>
+        <div class="back-icon"></div>
       </div> -->
       
     </div>
   </div>
 
-  
-
-  <div id="frame2" index="2" class="EasySlide-slides slides">
+  <div id="chuanzhi" index="2" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-      <div class="click" goto="3"></div>
+      <img src="./images/new.png" class="newyear" />
+      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt1"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="frame3" index="3" class="EasySlide-slides slides">
-    <div class="EasySlide-groups groups" gIndex="0">
-      <!-- <div class="img10 EasySlide-animate goto" in="zoomIn" delay=".5s" goto="2"><div></div></div>
-        <div class="img11 EasySlide-animate goto" in="zoomIn" delay="1s" goto="3"><div></div></div>
-        <div class="img12 EasySlide-animate goto" in="zoomIn" delay="1.5s" goto="5"><div></div></div>
-        <div class="img13 EasySlide-animate goto" in="zoomIn" delay="2s" goto="4"><div></div></div> -->
-      <img src="./images/line.png" class="line" />
-      <img src="./images/airplane.png" class="airplane" />
-    </div>
-  </div>
-  
-
-  <div id="frame4" index="4" class="EasySlide-slides slides">
-    <div class="EasySlide-groups groups" gIndex="0">
-    </div>
-  </div>
-  <div id="frame5" index="5" class="EasySlide-slides slides">
-    <div class="EasySlide-groups groups" gIndex="0">
-    </div>
-  </div>
-
-  <div id="frame6" index="6" class="EasySlide-slides slides">
+  <div id="chuanjiu" index="3" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt2"></div>
-      <div class="img69" goto="1"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
+
+  <div id="chuancha" index="4" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img src="./images/new.png" class="newyear" />
+      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt3"></div>
+      <div class="back-icon" goto="1"></div>
+    </div>
+  </div>
+
+  <div id="chuansi" index="5" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img src="./images/new.png" class="newyear" />
+      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt4"></div>
+      <div class="back-icon" goto="1"></div>
+    </div>
+  </div>
+
+  <div id="chuanguo" index="6" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img src="./images/new.png" class="newyear" />
+      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt5"></div>
+      <div class="back-icon" goto="1"></div>
+    </div>
+  </div>
+
+  <div id="chuanwei" index="7" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img src="./images/new.png" class="newyear" />
+      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt6"></div>
+      <div class="back-icon" goto="1"></div>
+    </div>
+  </div>
+
+  <!-- 熊猫拜年 -->
+   <div id="panda" index="8" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img class="p3-img p3logo EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" src="./imgs/public/P 300/logo11.png" alt="">
+      <img class="p3-img p3panda" src="./imgs/public/P 300/p3panda.png" alt="">
+      <img class="p3-img p3earth" src="./imgs/public/P 300/earth.png" alt="">
+    </div>
+  </div>
+
+  <!--飞机 <div id="frame3" index="3" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <img src="./images/line.png" class="line" />
+      <img src="./images/airplane.png" class="airplane" />
+    </div>
+  </div> -->
+
+  <!--集市 <div id="frame4" index="4" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+    </div>
+  </div> -->
+
+  <!--二维码 <div id="frame5" index="5" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+    </div>
+  </div> -->
+
+  
   
   <div id="arrow"></div>
   <div id="weixin_bg"><p class="share_icon"><img src="images/share.png" width="100" /></p></div>
@@ -205,7 +215,7 @@ div#loading{margin:15px auto 0;}
 <div id="loadingWrap">
   <img id="bg" src="./imgs/public/all/bg1.jpg" alt="">
   <div>
-    <img id="panda" src="./imgs/public/all/IFS Panda.png" alt="">
+    <img id="panda-img" src="./imgs/public/all/IFS Panda.png" alt="">
     <br/><img id="gif" src="./imgs/public/all/loading.gif" alt="">
     <h2 id="load-text">加载中，请稍后...</h2>
   </div>
@@ -238,9 +248,54 @@ div#loading{margin:15px auto 0;}
   var page = new EasySlide({
       wrapAll: "wrapAll",
       subpptObjects: [{
+        wrapDiv: "subppt1",
+        imgs: ["images/511.png", "images/512.png", "images/513.png", "images/blank.png"],
+        parentNum: 2
+      }]
+    })
+
+    new EasySlide({
+      wrapAll: "wrapAll",
+      subpptObjects: [{
         wrapDiv: "subppt2",
-        imgs: ["images/511.png", "images/512.png", "images/513.png"],
+        imgs: ["images/521.png", "images/522.png", "images/523.png"],
+        parentNum: 3
+      }]
+    })
+
+    new EasySlide({
+      wrapAll: "wrapAll",
+      subpptObjects: [{
+        wrapDiv: "subppt3",
+        imgs: ["images/531.png", "images/532.png", "images/533.png"],
+        parentNum: 4
+      }]
+    })
+
+    new EasySlide({
+      wrapAll: "wrapAll",
+      subpptObjects: [{
+        wrapDiv: "subppt4",
+        imgs: ["images/541.png", "images/541.png", "images/541.png"],
+        parentNum: 5
+      }]
+    })
+
+    new EasySlide({
+      wrapAll: "wrapAll",
+      subpptObjects: [{
+        wrapDiv: "subppt5",
+        imgs: ["images/551.png", "images/552.png", "images/553.png"],
         parentNum: 6
+      }]
+    })
+
+    new EasySlide({
+      wrapAll: "wrapAll",
+      subpptObjects: [{
+        wrapDiv: "subppt6",
+        imgs: ["images/561.png", "images/562.png", "images/563.png"],
+        parentNum: 7
       }]
     })
   
