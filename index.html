@@ -389,17 +389,17 @@ calc(-30vh + 195px);}
     utils.remove(shareCircleBtn);
   }
   
-  document.querySelector('body').addEventListener('click', function() {
-    modelArray.forEach(function(model){
-      model.style.display = 'none';
-    }, false);
-  })
+  // document.querySelector('body').addEventListener('click', function() {
+  //   modelArray.forEach(function(model){
+  //     model.style.display = 'none';
+  //   }, false);
+  // })
 
   const modelCtrlArray = document.querySelectorAll('img[mylayerid]');
   const modelArray = Array.from(document.querySelectorAll('.framemap'));
   modelCtrlArray.forEach(function(item, currentIndex) {
     item.addEventListener('click', function(e) {
-      e.stopPropagation();
+      // e.stopPropagation();
       modelArray.forEach(function(model, index) {
         if (currentIndex === index) {
           model.style.display = 'block';
@@ -407,7 +407,7 @@ calc(-30vh + 195px);}
           model.style.display = 'none';
         }
       })
-    }, false)
+    })
   })
 </script>
 </html>
