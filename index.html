@@ -169,7 +169,7 @@ div#loading{margin:15px auto 0;}
 </style>
 </head>
 <body>
-<div class="shareImgWrap"><img src="images/cover.jpg"/></div>
+<!-- <div class="shareImgWrap"><img src="images/cover.jpg"/></div> -->
 <div class="EasySlide-warp" id="wrapAll">
   <!--
     每个大的frame，里面包含若干个group，也就是用户上划下划，有可能是frame里面的各个group切换
@@ -247,7 +247,12 @@ div#loading{margin:15px auto 0;}
   <div id="arrow"></div>
   <div id="weixin_bg"><p class="share_icon"><img src="images/share.png" width="100" /></p></div>
 </div>
-<div id="loadingWrap"><div>建议在wifi环境下浏览<br/>加载中，请稍后</div><div id="loading">0%</div></div>
+<div id="loadingWrap">
+  <div>建议在wifi环境下浏览
+    <br/>加载中，请稍后<img id="gif" src="./imgs/public/all/loading7.gif" alt="">
+  </div>
+  <div id="loading">0%</div>
+</div>
 </body>
 <script>
   var resourceImg = [
@@ -286,6 +291,7 @@ div#loading{margin:15px auto 0;}
 
   var utils = EasySlide.utils;
   var arrow = utils.$('arrow');
+  var gif = utils.$('gif');
   
   page.loader(resourceImg.map(function(item){
     return 'images/'+item;
@@ -294,6 +300,7 @@ div#loading{margin:15px auto 0;}
   page.on('progress',function(percent){
     // console.log(percent);
     utils.$('loading').innerHTML = percent + '%';
+    utils.show(gif);
   });
 
   page.on('loaded',function(){
