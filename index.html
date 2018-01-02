@@ -109,7 +109,11 @@ calc(-30vh + 195px);}
 .share_icon{clear:both; padding:10px; text-align:right;}
 #loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#060a10;}
 #loadingWrap div{margin:170px auto 0; text-align:center;}
-#gif{position: absolute;left: 45%;top: 10%;}
+
+#panda{position: absolute;left:10%;top: 6%;width: 80%;}
+#gif{position: absolute;left: 45%;top: 50vh;}
+#load-text{position: absolute;left:30%;top: 62%;color: #000;margin: 0;}
+
 div#loading{margin:15px auto 0;}
 .shareImgWrap{display:none;}
 </style>
@@ -199,9 +203,11 @@ div#loading{margin:15px auto 0;}
 
 
 <div id="loadingWrap">
-  <img src="./imgs/public/all/bg1.jpg" alt="">
-  <div>建议在wifi环境下浏览
-    <br/>加载中，请稍后<img id="gif" src="./imgs/public/all/loading.gif" alt="">
+  <img id="bg" src="./imgs/public/all/bg1.jpg" alt="">
+  <div>
+    <img id="panda" src="./imgs/public/all/IFS Panda.png" alt="">
+    <br/><img id="gif" src="./imgs/public/all/loading.gif" alt="">
+    <h2 id="load-text">加载中，请稍后...</h2>
   </div>
   <div id="loading">0%</div>
 </div>
