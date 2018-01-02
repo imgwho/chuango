@@ -1,0 +1,6 @@
+	body{margin: 0; padding: 0; background: bisque;}
+	.text-content{  height: 1000px; position: absolute; left: 30%;}
+	p{ color: #000000; font-size: 14px;}
+	h2{font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        color:#000;}
+        h1{ position: absolute; top:200px;}
