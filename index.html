@@ -71,17 +71,25 @@ calc(-30vh + 195px);}
 
 .watch{position: absolute; width:100px;height: 100px;background:url(images/watch.png) no-repeat;background-size:100%;bottom: 98px;left:152px;}
 
-/* 地图 #frame3{background:url(images/02.jpg) no-repeat center top;background-size:100%;} */
+/* 地图 #frame3 */
 /* 集市 #frame4{background:url(images/04.png) no-repeat center top;background-size:100%;} */
 /* 二维码 #frame5{background:url(images/05.png) no-repeat center top;background-size:100%;} */
 
 
 
-.line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
-.airplane{position: absolute;width: 36%;animation: goto 2s ease-in-out;left: 214px; top: 242px;}
+
  
 @keyframes fadeout { from { transform: translateY(150px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes goto {
+  from {
+    left: 65px;
+    top: 386px;
+  }
+  to {
+    transform: none;
+  }
+}
 
 #panda{background:url(./imgs/public/all/bg1.jpg) no-repeat center top;background-size:100%;}
 .p3-img{position: absolute;top: 10%;}
@@ -89,6 +97,10 @@ calc(-30vh + 195px);}
 .p3logo{width: 50%; margin: -9vh 27vw;}
 .p3panda{width:75%;margin: 22vh 12vw;}
 .p3earth{width: 92%;margin: 19vh 5vw;animation: 100s rotate linear infinite;}
+
+#chuango{background:url(images/02.jpg) no-repeat center top;background-size:100%;}
+.line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
+.airplane{position: absolute;width: 36%;animation: goto 2s ease-in-out;left: 214px; top: 242px;}
 </style>
 </head>
 <body>
@@ -191,12 +203,13 @@ calc(-30vh + 195px);}
     </div>
   </div>
 
-  <!--飞机 <div id="frame3" index="3" class="EasySlide-slides slides">
+  <!-- 飞机  -->
+  <div id="chuango" index="9" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/line.png" class="line" />
       <img src="./images/airplane.png" class="airplane" />
     </div>
-  </div> -->
+  </div>
 
   <!--集市 <div id="frame4" index="4" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
