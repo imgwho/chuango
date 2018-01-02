@@ -67,6 +67,7 @@ calc(-30vh + 195px);}
 .img3-5{position: absolute; width:40%;top:291px;left:201px;}
 .img3-6{position: absolute; width:50%;top:400px;left:45px;}
 .hide{opacity:0;}
+.chuansi-pic{width: 60%;position: absolute;left: 20%;top: 18%;}
 
 .watch{position: absolute; width:100px;height: 100px;background:url(images/watch.png) no-repeat;background-size:100%;bottom: 98px;left:152px;}
 
@@ -84,9 +85,10 @@ calc(-30vh + 195px);}
 
 #panda{background:url(./imgs/public/all/bg1.jpg) no-repeat center top;background-size:100%;}
 .p3-img{position: absolute;top: 10%;}
-.p3logo{width: 50%; margin: -9vh 27vw;animation: pulse 1.5s ease 1s infinite normal forwards;}
-.p3panda{width:75%;margin: 22vh 12vw;}
-.p3earth{width: 92%;margin: 19vh 5vw;}
+/* .p3logo{width: 50%; margin: -9vh 27vw;animation: pulse 1.5s ease 1s infinite normal forwards;} */
+.p3logo{width: 50%; margin: -9vh 27vw;animation: panda 2.5s ease 0s 1 normal forwards;}
+.p3panda{width:75%;margin: 22vh 12vw;animation: panda 2.5s ease 0s 1 normal forwards;}
+.p3earth{width: 92%;margin: 19vh 5vw;animation: 100s rotate linear infinite;}
 </style>
 </head>
 <body>
@@ -158,7 +160,8 @@ calc(-30vh + 195px);}
   <div id="chuansi" index="5" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
-      <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt4"></div>
+      <!-- <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt4"></div> -->
+      <img src="./images/541.png" alt="" class="chuansi-pic">
       <div class="back-icon" goto="1"></div>
     </div>
   </div>
@@ -182,7 +185,7 @@ calc(-30vh + 195px);}
   <!-- 熊猫拜年 -->
    <div id="panda" index="8" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-      <img class="p3-img p3logo EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" src="./imgs/public/P 300/logo11.png" alt="">
+      <img class="p3-img p3logo" src="./imgs/public/P 300/logo11.png" alt="">
       <img class="p3-img p3panda" src="./imgs/public/P 300/p3panda.png" alt="">
       <img class="p3-img p3earth" src="./imgs/public/P 300/earth.png" alt="">
     </div>
@@ -258,7 +261,7 @@ calc(-30vh + 195px);}
       wrapAll: "wrapAll",
       subpptObjects: [{
         wrapDiv: "subppt2",
-        imgs: ["images/521.png", "images/522.png", "images/523.png"],
+        imgs: ["images/521.png", "images/522.png", "images/523.png", "images/blank.png"],
         parentNum: 3
       }]
     })
@@ -267,25 +270,25 @@ calc(-30vh + 195px);}
       wrapAll: "wrapAll",
       subpptObjects: [{
         wrapDiv: "subppt3",
-        imgs: ["images/531.png", "images/532.png", "images/533.png"],
+        imgs: ["images/531.png", "images/532.png", "images/533.png", "images/blank.png"],
         parentNum: 4
       }]
     })
 
-    new EasySlide({
-      wrapAll: "wrapAll",
-      subpptObjects: [{
-        wrapDiv: "subppt4",
-        imgs: ["images/541.png", "images/541.png", "images/541.png"],
-        parentNum: 5
-      }]
-    })
+    // new EasySlide({
+    //   wrapAll: "wrapAll",
+    //   subpptObjects: [{
+    //     wrapDiv: "subppt4",
+    //     imgs: ["images/541.png", "images/blank.png", "images/blank.png"],
+    //     parentNum: 5
+    //   }]
+    // })
 
     new EasySlide({
       wrapAll: "wrapAll",
       subpptObjects: [{
         wrapDiv: "subppt5",
-        imgs: ["images/551.png", "images/552.png", "images/553.png"],
+        imgs: ["images/551.png", "images/552.png", "images/553.png", "images/blank.png"],
         parentNum: 6
       }]
     })
@@ -294,7 +297,7 @@ calc(-30vh + 195px);}
       wrapAll: "wrapAll",
       subpptObjects: [{
         wrapDiv: "subppt6",
-        imgs: ["images/561.png", "images/562.png", "images/563.png"],
+        imgs: ["images/561.png", "images/562.png", "images/563.png", "images/blank.png"],
         parentNum: 7
       }]
     })
