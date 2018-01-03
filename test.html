@@ -5,17 +5,6 @@
 <meta name="format-detection" content="telephone=no"/>
 <meta http-equiv="Cache-Control" content="no-transform"/> 
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
-
-<script type="text/javascript">
-  //原来是在微信易信执行Ready之前，先注册事件，所以放在所有请求的最前面
-  document.addEventListener("WeixinJSBridgeReady", function () {
-      audioAutoPlay('Jaudio');//给个全局函数
-  }, false);
-  document.addEventListener('YixinJSBridgeReady', function() {
-      audioAutoPlay('Jaudio');//给个全局函数
-  }, false);
-  </script>
-
 <title>川货出川上北京</title>
 <link href="./src/EasySlide.css" rel="stylesheet">
 <script src="./src/EasySlide.js"></script>
@@ -40,9 +29,9 @@ div#loading{margin:15px auto 0;}
 #loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#060a10;}
 #loadingWrap div{margin:170px auto 0; text-align:center;}
 
-#panda-img{position: absolute;left:30%;top: 30%;width: 37%;}
+#panda-img{position: absolute;left:10%;top: 6%;width: 80%;}
 #gif{position: absolute;left: 45%;top: 50vh;}
-#load-text{position: absolute;left:38%;top: 60%;color: #000;margin: 0;}
+#load-text{position: absolute;left:30%;top: 62%;color: #000;margin: 0;}
 
 #wrapAll{position:relative; overflow:hidden;}
 #wrapAll > .slides{width:100%; height:100%; position:absolute; top:0; left:0; -webkit-transition:-webkit-transform 0.5s ease; overflow:hidden;}
@@ -71,28 +60,28 @@ calc(-30vh + 195px);}
 .shareLayer, #chuanzhi, #chuanjiu, #chuancha, #chuansi, #chuanguo, #chuanwei{width:100%;height:100%;background:#060a10 url(images/03.jpg) no-repeat center top;background-size:100%;display:none;}
 .shareLayer > div{position:absolute;}
 
+
+/* 菜单页面 */
+.newyear{position: absolute;width: 80%; transform:scale(.8);left: 50px;bottom: 37px;}
 .img3-1{position: absolute; width:81%;top:25px;left:41px;}
 .img3-2{position: absolute; width:40%;top:142px;left:46px;}
 .img3-3{position: absolute; width:40%;top:158px;left:194px;}
 .img3-4{position: absolute; width:50%;top:288px;left:36px;}
 .img3-5{position: absolute; width:40%;top:291px;left:201px;}
 .img3-6{position: absolute; width:50%;top:400px;left:45px;}
-
-/* 菜单页面 */
-.newyear{position: absolute;width: 80%; transform:scale(.8);left: 50px;bottom: 37px;}
-.img3-1-1{position: absolute; width:94%;top:-13px;left:41px;}
-.img3-2-1{position: absolute; width:68%;top:11vh;left:46px;}
-.img3-3-1{position: absolute; width:40%;top:158px;left:194px;}
-.img3-4-1{position: absolute; width:50%;top:288px;left:36px;}
-.img3-5-1{position: absolute; width:40%;top:291px;left:201px;}
-.img3-6-1{position: absolute; width:100%;bottom:2vh;left:1px;}
-.img3-7-1{position: absolute; width:79%;bottom:50vh;left:45px;}
-
 .hide{opacity:0;}
 .chuansi-pic{width: 60%;position: absolute;left: 20%;top: 18%;}
 
 .watch{position: absolute; width:100px;height: 100px;background:url(images/skip.png) no-repeat;background-size:100%;bottom: 98px;left:231px;}
 
+/* 地图 #frame3 */
+/* 集市 #frame4{background:url(images/04.png) no-repeat center top;background-size:100%;} */
+/* 二维码 #frame5{background:url(images/05.png) no-repeat center top;background-size:100%;} */
+
+
+
+
+ 
 @keyframes fadeout { from { transform: translateY(150px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 @keyframes goto {
@@ -123,9 +112,6 @@ calc(-30vh + 195px);}
 .map2{width: 10%; position: absolute;top: 10vh;margin: 63vh 53vw;}
 .map3{width: 10%; position: absolute;top: 10vh;margin: -7vh 66vw;}
 
-.map4{width: 100%; position: absolute;bottom: 0;}
-
-
 #framemap1{width: 80%;position: absolute;top: 10vh;margin: 1vh 7vw;}
 #framemap2{width: 90%;position: absolute;top: 10vh;margin: 46vh 5vw;}
 #framemap3{width: 80%;position: absolute;top: 10vh;margin: 0vh 13vw;}
@@ -133,17 +119,15 @@ calc(-30vh + 195px);}
 
 #qrcode{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
 .qrcode-pic{width: 67%; position: absolute;top: 50%; margin: -27vh 17vw;}
-.qrcode-text{width: 100%;position: absolute;top: 50%;  margin: 16vh 39vw; color: red;}
-.qrcode-text2{width: 100%;position: absolute;top: 50%;  margin: 21vh 17vw; color: red;}
+.qrcode-text{width: 100%;position: absolute;top: 50%;  margin: 16vh 37vw; color: red;}
+.qrcode-text2{width: 100%;position: absolute;top: 50%;  margin: 21vh 15vw; color: red;}
 .qrcode-text-text{width: 67%; position: absolute;top: 50%;margin: 41vh 17vw;}
 </style>
 </head>
 <body>
-    <audio id="Jaudio" class="media-audio" src="http://game.163.com/weixin/gfxm3_gc/images/bg.mp3" preload loop="loop">
-    </audio>
 <!-- <div class="shareImgWrap"><img src="images/cover.jpg"/></div> -->
 <div class="EasySlide-warp" id="wrapAll">
-  
+  <audio src="backmusic.mp3" autoplay></audio>
   <!--
     每个大的frame，里面包含若干个group，也就是用户上划下划，有可能是frame里面的各个group切换
     每个group里面包含若干元素，有动画的元素拥有animate的属性
@@ -163,30 +147,17 @@ calc(-30vh + 195px);}
     </div>
   </div>
 
-  <!-- 文字快闪 -->
-  <div id="frame0" index="1" class="EasySlide-slides slides">
-    <div class="EasySlide-groups groups" gIndex="0">
-      <h1 class="img3-1-1 hide" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">2018川货新春大拜年、我们来了！来了！来了！</h1>
-      <h2 class="img3-2-1 hide" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">川酒、郎酒、邓家老坛</h2>
-      <h3 class="img3-3-1 hide" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">川茶、竹叶青、碧潭飘雪、邛崃文君、绿毛尖、绿毛峰、花毛峰、潘西苦荞</h3>
-      <h3 class="img3-4-1 hide" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">川药、川贝、川白芍、川母、川白芷</h3>
-      <h3 class="img3-5-1 hide" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">川果、雷波脐橙、都江堰猕猴桃、广安蜜梨、早钟枇杷、蒲江丑柑</h3>
-      <h3 class="img3-6-1 hide" style="animation: mypulse 1.5s ease 5s 1 normal forwards;">川味、南溪豆腐干、琥珀核桃、五彩土豆、二荆条辣椒、自贡井盐、保宁醋、思坡醋、中坝酱油、川菜、豆花蘸水、腊肉香肠、灯影牛肉、酱腌菜、缠丝兔、牛油火锅、水煮肉片、麻婆豆腐、夫妻肺片、鱼香肉丝、回锅肉！</h3>
-      <h1 class="img3-7-1 hide" style="animation: mypulse 1.5s ease 6s 1 normal forwards;">我们等你!等你!</h1>
-    </div>
-  </div>
-
-  <div id="frame1" index="2" class="EasySlide-slides slides">
+  <div id="frame1" index="1" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <!-- <img src="./images/new.png" class="newyear" /> -->
-      <img src="./images/03_1.png" class="img3-1 hide" goto="3" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
-      <img src="./images/03_2.png" class="img3-2 hide" goto="4" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
-      <img src="./images/03_3.png" class="img3-3 hide" goto="5" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
-      <img src="./images/03_4.png" class="img3-4 hide" goto="6" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
-      <img src="./images/03_5.png" class="img3-5 hide" goto="7" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
-      <img src="./images/03_6.png" class="img3-6 hide" goto="8" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
+      <img src="./images/03_1.png" class="img3-1 hide" goto="2" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
+      <img src="./images/03_2.png" class="img3-2 hide" goto="3" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
+      <img src="./images/03_3.png" class="img3-3 hide" goto="4" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
+      <img src="./images/03_4.png" class="img3-4 hide" goto="5" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
+      <img src="./images/03_5.png" class="img3-5 hide" goto="6" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
+      <img src="./images/03_6.png" class="img3-6 hide" goto="7" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
       
-       <div class="watch EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" goto="9"></div>
+       <div class="watch EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" goto="8"></div>
        <!--
       <div class="EasySlide-flayer flayer shareLayer" id="frame6l2" EasySlide-triggerLayer="desktopAlbum">
         <img src="./images/new.png" class="newyear" />
@@ -197,57 +168,57 @@ calc(-30vh + 195px);}
     </div>
   </div>
 
-  <div id="chuanzhi" index="3" class="EasySlide-slides slides">
+  <div id="chuanzhi" index="2" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt1"></div>
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="chuanjiu" index="4" class="EasySlide-slides slides">
+  <div id="chuanjiu" index="3" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt2"></div>
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="chuancha" index="5" class="EasySlide-slides slides">
+  <div id="chuancha" index="4" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt3"></div>
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="chuansi" index="6" class="EasySlide-slides slides">
+  <div id="chuansi" index="5" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <!-- <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt4"></div> -->
       <img src="./images/541.png" alt="" class="chuansi-pic">
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="chuanguo" index="7" class="EasySlide-slides slides">
+  <div id="chuanguo" index="6" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt5"></div>
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
-  <div id="chuanwei" index="8" class="EasySlide-slides slides">
+  <div id="chuanwei" index="7" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt6"></div>
-      <div class="back-icon" goto="2"></div>
+      <div class="back-icon" goto="1"></div>
     </div>
   </div>
 
   <!-- 熊猫拜年 -->
-   <div id="panda" index="9" class="EasySlide-slides slides">
+   <div id="panda" index="8" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="p3-img p3logo" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/logo11.png" alt="">
       <img class="p3-img p3panda" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/p3panda.png" alt="">
@@ -257,7 +228,7 @@ calc(-30vh + 195px);}
 
   <!-- 飞机  -->
  
- <div id="chuango" index="10" class="EasySlide-slides slides">
+ <div id="chuango" index="9" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/line.png" class="line" />
       <img src="./images/airplane.png" class="airplane" />
@@ -265,22 +236,20 @@ calc(-30vh + 195px);}
   </div>
 
   <!-- 北京地图 -->
-  <div id="map" index="11" class="EasySlide-slides slides">
+  <div id="map" index="10" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="img-pic map1 hide" layerid="framemap1" src="imgs/public/P 600/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
       <img class="img-pic map2 hide" layerid="framemap2" src="imgs/public/P 600/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
       <img class="img-pic map3 hide" layerid="framemap3" src="imgs/public/P 600/gps_03.png" alt="" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">
-
-      <img class="img-pic map4 hide" layerid="framemap3" src="images/map4.png" alt="" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">
     </div>
 
-    <img id="framemap1" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap2" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap3" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap1" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap2" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap3" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
   </div>
 
   <!-- 二维码  -->
-  <div id="qrcode" index="12" class="EasySlide-slides slides">
+  <div id="qrcode" index="11" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="qrcode-pic" src="images/qrcode.jpg" alt="">
       <!-- <img class="qrcode-text" src="images/qrcode-text.png" alt=""> -->
@@ -289,9 +258,6 @@ calc(-30vh + 195px);}
       <img class="qrcode-text-text" src="images/text.png" alt="">
     </div>
   </div>
-
-
-  
 
   
   
@@ -305,28 +271,13 @@ calc(-30vh + 195px);}
   <div>
     <img id="panda-img" src="./imgs/public/all/IFS Panda.png" alt="">
     <br/><img id="gif" src="./imgs/public/all/loading.gif" alt="">
-    <h2 id="load-text">loading...</h2>
+    <h2 id="load-text">加载中，请稍后...</h2>
   </div>
   <div id="loading">0%</div>
 </div>
 
 </body>
 <script>
-  function baidu(url) {
-      console.log(url);
-      window.location.href = url
-    }
-
-  function audioAutoPlay(id) {//全局控制播放函数
-    var audio = document.getElementById(id),
-      play = function () {
-        audio.play();
-        document.removeEventListener("touchstart", play, false);
-      };
-    audio.play();
-    document.addEventListener("touchstart", play, false);
-  }
-
   var resourceImg = [
     "01.jpg", "01_1.png", "01_2.png", "01_3.png",
     "02.jpg", "03.jpg", "03_1.png", "03_2.png", "03_3.png", 
@@ -335,9 +286,8 @@ calc(-30vh + 195px);}
     "523.png", "531.png", "532.png", "533.png", "541.png",
     "551.png", "552.png", "553.png", "561.png", "562.png", "563.png",
     "airplane.png", "arrow.png", "cover.jpg", "line.png", "new.png", "back.png", "share.png",
-    "maps.jpg", "gps_01.png", "gps_02.png", "gps_03.png", "gps01.png", "gps02.png", "gps03.png","map4.png"
+    "maps.jpg", "gps_01.png", "gps_02.png", "gps_03.png", "gps01.png", "gps02.png", "gps03.png"
   ];
-
 
   // var page = new EasySlide({
   //   wrapAll: "wrapAll",
@@ -355,7 +305,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt1",
         imgs: ["images/511.png", "images/512.png", "images/513.png", "images/blank.png"],
-        parentNum: 3
+        parentNum: 2
       }]
     })
 
@@ -364,7 +314,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt2",
         imgs: ["images/521.png", "images/522.png", "images/523.png", "images/blank.png"],
-        parentNum: 4
+        parentNum: 3
       }]
     })
 
@@ -373,7 +323,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt3",
         imgs: ["images/531.png", "images/532.png", "images/533.png", "images/blank.png"],
-        parentNum: 5
+        parentNum: 4
       }]
     })
 
@@ -392,7 +342,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt5",
         imgs: ["images/551.png", "images/552.png", "images/553.png", "images/blank.png"],
-        parentNum: 7
+        parentNum: 6
       }]
     })
 
@@ -401,7 +351,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt6",
         imgs: ["images/561.png", "images/562.png", "images/563.png", "images/blank.png"],
-        parentNum: 8
+        parentNum: 7
       }]
     })
   
@@ -477,5 +427,11 @@ calc(-30vh + 195px);}
   //     })
   //   }, false)
   // })
+</script>
+<script type="text/javascript">
+	function baidu(url){
+		console.log(url);
+		window.location.href=url
+	}
 </script>
 </html>
