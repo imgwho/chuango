@@ -228,14 +228,14 @@ calc(-30vh + 195px);}
   <!-- 北京地图 -->
   <div id="map" index="10" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-        <img class="img-pic map1 hide" mylayerid src="imgs/public/P 600/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
-        <img class="img-pic map2 hide" mylayerid src="imgs/public/P 600/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
-        <img class="img-pic map3 hide" mylayerid src="imgs/public/P 600/gps_03.png" alt="" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">
+      <img class="img-pic map1 hide" layerid="framemap1" src="imgs/public/P 600/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
+      <img class="img-pic map2 hide" layerid="framemap2" src="imgs/public/P 600/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
+      <img class="img-pic map3 hide" layerid="framemap3" src="imgs/public/P 600/gps_03.png" alt="" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">
     </div>
 
-    <img id="framemap1" class="flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap2" class="flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap3" class="flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap1" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap2" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap3" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
   </div>
 
   <!--二维码 <div id="frame5" index="5" class="EasySlide-slides slides">
@@ -391,25 +391,25 @@ calc(-30vh + 195px);}
     utils.remove(shareCircleBtn);
   }
   
-  document.querySelector('body').addEventListener('click', function() {
-    modelArray.forEach(function(model){
-      model.style.display = 'none';
-    }, false);
-  })
+  // document.querySelector('body').addEventListener('click', function() {
+  //   modelArray.forEach(function(model){
+  //     model.style.display = 'none';
+  //   }, false);
+  // })
 
-  const modelCtrlArray = document.querySelectorAll('img[mylayerid]');
-  const modelArray = Array.from(document.querySelectorAll('.framemap'));
-  modelCtrlArray.forEach(function(item, currentIndex) {
-    item.addEventListener('click', function(e) {
-      e.stopPropagation();
-      modelArray.forEach(function(model, index) {
-        if (currentIndex === index) {
-          model.style.display = 'block';
-        } else {
-          model.style.display = 'none';
-        }
-      })
-    }, false)
-  })
+  // const modelCtrlArray = document.querySelectorAll('img[mylayerid]');
+  // const modelArray = Array.from(document.querySelectorAll('.framemap'));
+  // modelCtrlArray.forEach(function(item, currentIndex) {
+  //   item.addEventListener('click', function(e) {
+  //     e.stopPropagation();
+  //     modelArray.forEach(function(model, index) {
+  //       if (currentIndex === index) {
+  //         model.style.display = 'block';
+  //       } else {
+  //         model.style.display = 'none';
+  //       }
+  //     })
+  //   }, false)
+  // })
 </script>
 </html>
