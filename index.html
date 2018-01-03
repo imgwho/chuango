@@ -60,28 +60,28 @@ calc(-30vh + 195px);}
 .shareLayer, #chuanzhi, #chuanjiu, #chuancha, #chuansi, #chuanguo, #chuanwei{width:100%;height:100%;background:#060a10 url(images/03.jpg) no-repeat center top;background-size:100%;display:none;}
 .shareLayer > div{position:absolute;}
 
-
-/* 菜单页面 */
-.newyear{position: absolute;width: 80%; transform:scale(.8);left: 50px;bottom: 37px;}
 .img3-1{position: absolute; width:81%;top:25px;left:41px;}
 .img3-2{position: absolute; width:40%;top:142px;left:46px;}
 .img3-3{position: absolute; width:40%;top:158px;left:194px;}
 .img3-4{position: absolute; width:50%;top:288px;left:36px;}
 .img3-5{position: absolute; width:40%;top:291px;left:201px;}
 .img3-6{position: absolute; width:50%;top:400px;left:45px;}
+
+/* 菜单页面 */
+.newyear{position: absolute;width: 80%; transform:scale(.8);left: 50px;bottom: 37px;}
+.img3-1-1{position: absolute; width:81%;top:-13px;left:41px;}
+.img3-2-1{position: absolute; width:40%;top:142px;left:46px;}
+.img3-3-1{position: absolute; width:40%;top:158px;left:194px;}
+.img3-4-1{position: absolute; width:50%;top:288px;left:36px;}
+.img3-5-1{position: absolute; width:40%;top:291px;left:201px;}
+.img3-6-1{position: absolute; width:100%;top:490px;left:1px;}
+.img3-7-1{position: absolute; width:79%;top:395px;left:45px;}
+
 .hide{opacity:0;}
 .chuansi-pic{width: 60%;position: absolute;left: 20%;top: 18%;}
 
 .watch{position: absolute; width:100px;height: 100px;background:url(images/skip.png) no-repeat;background-size:100%;bottom: 98px;left:231px;}
 
-/* 地图 #frame3 */
-/* 集市 #frame4{background:url(images/04.png) no-repeat center top;background-size:100%;} */
-/* 二维码 #frame5{background:url(images/05.png) no-repeat center top;background-size:100%;} */
-
-
-
-
- 
 @keyframes fadeout { from { transform: translateY(150px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 @keyframes goto {
@@ -147,17 +147,30 @@ calc(-30vh + 195px);}
     </div>
   </div>
 
-  <div id="frame1" index="1" class="EasySlide-slides slides">
+  <!-- 文字快闪 -->
+  <div id="frame0" index="1" class="EasySlide-slides slides">
+    <div class="EasySlide-groups groups" gIndex="0">
+      <h1 class="img3-1-1 hide" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">2018川货新春大拜年、我们来了！来了！来了！</h1>
+      <h2 class="img3-2-1 hide" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">川酒、郎酒、邓家老坛</h2>
+      <h3 class="img3-3-1 hide" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">川茶、竹叶青、碧潭飘雪、邛崃文君、绿毛尖、绿毛峰、花毛峰、潘西苦荞</h3>
+      <h3 class="img3-4-1 hide" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">川药、川贝、川白芍、川母、川白芷</h3>
+      <h3 class="img3-5-1 hide" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">川果、雷波脐橙、都江堰猕猴桃、广安蜜梨、早钟枇杷、蒲江丑柑</h3>
+      <h3 class="img3-6-1 hide" style="animation: mypulse 1.5s ease 5s 1 normal forwards;">川味、南溪豆腐干、琥珀核桃、五彩土豆、二荆条辣椒、自贡井盐、保宁醋、思坡醋、中坝酱油、川菜、豆花蘸水、腊肉香肠、灯影牛肉、酱腌菜、缠丝兔、牛油火锅、水煮肉片、麻婆豆腐、夫妻肺片、鱼香肉丝、回锅肉！</h3>
+      <h1 class="img3-7-1 hide" style="animation: mypulse 1.5s ease 6s 1 normal forwards;">我们等你!等你!</h1>
+    </div>
+  </div>
+
+  <div id="frame1" index="2" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <!-- <img src="./images/new.png" class="newyear" /> -->
-      <img src="./images/03_1.png" class="img3-1 hide" goto="2" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
-      <img src="./images/03_2.png" class="img3-2 hide" goto="3" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
-      <img src="./images/03_3.png" class="img3-3 hide" goto="4" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
-      <img src="./images/03_4.png" class="img3-4 hide" goto="5" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
-      <img src="./images/03_5.png" class="img3-5 hide" goto="6" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
-      <img src="./images/03_6.png" class="img3-6 hide" goto="7" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
+      <img src="./images/03_1.png" class="img3-1 hide" goto="3" style="animation: mypulse 1.5s ease 0s 1 normal forwards;"/>
+      <img src="./images/03_2.png" class="img3-2 hide" goto="4" style="animation: mypulse 1.5s ease 1s 1 normal forwards;"/>
+      <img src="./images/03_3.png" class="img3-3 hide" goto="5" style="animation: mypulse 1.5s ease 2s 1 normal forwards;"/>
+      <img src="./images/03_4.png" class="img3-4 hide" goto="6" style="animation: mypulse 1.5s ease 3s 1 normal forwards;"/>
+      <img src="./images/03_5.png" class="img3-5 hide" goto="7" style="animation: mypulse 1.5s ease 4s 1 normal forwards;"/>
+      <img src="./images/03_6.png" class="img3-6 hide" goto="8" style="animation: mypulse 1.5s ease 5s 1 normal forwards;"/>
       
-       <div class="watch EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" goto="8"></div>
+       <div class="watch EasySlide-animate" in="pulse" delay="1s" duration="1.5s" iteration="infinite" goto="9"></div>
        <!--
       <div class="EasySlide-flayer flayer shareLayer" id="frame6l2" EasySlide-triggerLayer="desktopAlbum">
         <img src="./images/new.png" class="newyear" />
@@ -168,57 +181,57 @@ calc(-30vh + 195px);}
     </div>
   </div>
 
-  <div id="chuanzhi" index="2" class="EasySlide-slides slides">
+  <div id="chuanzhi" index="3" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt1"></div>
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
-  <div id="chuanjiu" index="3" class="EasySlide-slides slides">
+  <div id="chuanjiu" index="4" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt2"></div>
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
-  <div id="chuancha" index="4" class="EasySlide-slides slides">
+  <div id="chuancha" index="5" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt3"></div>
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
-  <div id="chuansi" index="5" class="EasySlide-slides slides">
+  <div id="chuansi" index="6" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <!-- <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt4"></div> -->
       <img src="./images/541.png" alt="" class="chuansi-pic">
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
-  <div id="chuanguo" index="6" class="EasySlide-slides slides">
+  <div id="chuanguo" index="7" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt5"></div>
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
-  <div id="chuanwei" index="7" class="EasySlide-slides slides">
+  <div id="chuanwei" index="8" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/new.png" class="newyear" />
       <div style="position:absolute;width:100%;top:18%;left:0;" id="subppt6"></div>
-      <div class="back-icon" goto="1"></div>
+      <div class="back-icon" goto="2"></div>
     </div>
   </div>
 
   <!-- 熊猫拜年 -->
-   <div id="panda" index="8" class="EasySlide-slides slides">
+   <div id="panda" index="9" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="p3-img p3logo" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/logo11.png" alt="">
       <img class="p3-img p3panda" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/p3panda.png" alt="">
@@ -228,7 +241,7 @@ calc(-30vh + 195px);}
 
   <!-- 飞机  -->
  
- <div id="chuango" index="9" class="EasySlide-slides slides">
+ <div id="chuango" index="10" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img src="./images/line.png" class="line" />
       <img src="./images/airplane.png" class="airplane" />
@@ -236,7 +249,7 @@ calc(-30vh + 195px);}
   </div>
 
   <!-- 北京地图 -->
-  <div id="map" index="10" class="EasySlide-slides slides">
+  <div id="map" index="11" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="img-pic map1 hide" layerid="framemap1" src="imgs/public/P 600/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
       <img class="img-pic map2 hide" layerid="framemap2" src="imgs/public/P 600/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
@@ -249,7 +262,7 @@ calc(-30vh + 195px);}
   </div>
 
   <!-- 二维码  -->
-  <div id="qrcode" index="11" class="EasySlide-slides slides">
+  <div id="qrcode" index="12" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
       <img class="qrcode-pic" src="images/qrcode.jpg" alt="">
       <!-- <img class="qrcode-text" src="images/qrcode-text.png" alt=""> -->
@@ -258,6 +271,9 @@ calc(-30vh + 195px);}
       <img class="qrcode-text-text" src="images/text.png" alt="">
     </div>
   </div>
+
+
+  
 
   
   
@@ -305,7 +321,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt1",
         imgs: ["images/511.png", "images/512.png", "images/513.png", "images/blank.png"],
-        parentNum: 2
+        parentNum: 3
       }]
     })
 
@@ -314,7 +330,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt2",
         imgs: ["images/521.png", "images/522.png", "images/523.png", "images/blank.png"],
-        parentNum: 3
+        parentNum: 4
       }]
     })
 
@@ -323,7 +339,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt3",
         imgs: ["images/531.png", "images/532.png", "images/533.png", "images/blank.png"],
-        parentNum: 4
+        parentNum: 6
       }]
     })
 
@@ -342,7 +358,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt5",
         imgs: ["images/551.png", "images/552.png", "images/553.png", "images/blank.png"],
-        parentNum: 6
+        parentNum: 7
       }]
     })
 
@@ -351,7 +367,7 @@ calc(-30vh + 195px);}
       subpptObjects: [{
         wrapDiv: "subppt6",
         imgs: ["images/561.png", "images/562.png", "images/563.png", "images/blank.png"],
-        parentNum: 7
+        parentNum: 8
       }]
     })
   
