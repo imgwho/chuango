@@ -274,9 +274,9 @@ calc(-30vh + 195px);}
       <img class="img-pic map4 hide" layerid="framemap3" src="images/map4.png" alt="" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">
     </div>
 
-    <img id="framemap1" class="framemap" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap2" class="framemap" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap3" class="framemap" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap1" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap2" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap3" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
   </div>
 
   <!-- 二维码  -->
@@ -456,15 +456,15 @@ calc(-30vh + 195px);}
   } else {
     utils.remove(shareCircleBtn);
   }
-  const modelCtrlArray = document.querySelectorAll('img[mylayerid]');
-  const modelArray = Array.from(document.querySelectorAll('.framemap'));
   
-  document.querySelector('body').addEventListener('click', function() {
-    modelArray.forEach(function(flayer){
-      flayer.style.display = 'none';
-    }, false);
-  })
+  // document.querySelector('body').addEventListener('click', function() {
+  //   modelArray.forEach(function(model){
+  //     model.style.display = 'none';
+  //   }, false);
+  // })
 
+  // const modelCtrlArray = document.querySelectorAll('img[mylayerid]');
+  // const modelArray = Array.from(document.querySelectorAll('.framemap'));
   // modelCtrlArray.forEach(function(item, currentIndex) {
   //   item.addEventListener('click', function(e) {
   //     e.stopPropagation();
