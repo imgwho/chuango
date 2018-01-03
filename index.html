@@ -38,12 +38,15 @@ div#loading{margin:15px auto 0;}
 .groups{display:none;}
 .groups .animate{opacity:0;}
 .groups > div{position:absolute;font-size:15px;line-height:22px; font-weight:bold;}
+
+
 #frame0{background:url(images/01.jpg) no-repeat center center;background-size:100%;}
 .img00{width:100%;height:300px;background:url(images/01_1.png) no-repeat center center;background-size:350px;top:50%;margin: -30vh 0;}
 .img01{z-index:2; width:100%;height:50px;background: url(images/01_2.png) no-repeat center top;background-size:50px;top:50%;margin-top:
 calc(-30vh + 195px);}
 .img02{animation: fadeout 2s ease-in-out ; width:100%;height:397px;background: url(images/01_3.png) no-repeat center top;background-size:250px;top:50%;margin-left:110px;margin-top: calc(-30vh + 205px);}
 .img03{width:100%;height:98px;background:url(images/01_4.png) no-repeat center center;background-size:300px;bottom:30px; left: 14px;}
+
 #frame1{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
 
 .shareBtns{width:100%;}
@@ -113,6 +116,12 @@ calc(-30vh + 195px);}
 #framemap2{width: 90%;position: absolute;top: 10vh;margin: 46vh 5vw;}
 #framemap3{width: 80%;position: absolute;top: 10vh;margin: 0vh 13vw;}
 
+
+#qrcode{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
+.qrcode-pic{width: 67%; position: absolute;top: 50%; margin: -24vh 17vw;}
+.qrcode-text{width: 100%;position: absolute;top: 50%;  margin: 16vh 37vw; color: red;}
+.qrcode-text2{width: 100%;position: absolute;top: 50%;  margin: 21vh 15vw; color: red;}
+.qrcode-text-text{width: 67%; position: absolute;top: 50%;margin: 41vh 17vw;}
 </style>
 </head>
 <body>
@@ -238,10 +247,16 @@ calc(-30vh + 195px);}
     <img id="framemap3" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
   </div>
 
-  <!--二维码 <div id="frame5" index="5" class="EasySlide-slides slides">
+  <!-- 二维码  -->
+  <div id="qrcode" index="11" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
+      <img class="qrcode-pic" src="images/qrcode.jpg" alt="">
+      <!-- <img class="qrcode-text" src="images/qrcode-text.png" alt=""> -->
+      <h2 class="qrcode-text">扫码关注</h2>
+      <h3 class="qrcode-text2">川货新春大拜年 官方微信公众号</h3>
+      <img class="qrcode-text-text" src="images/text.png" alt="">
     </div>
-  </div> -->
+  </div>
 
   
   
@@ -356,7 +371,7 @@ calc(-30vh + 195px);}
 
   page.on('loaded',function(){
     utils.hide(utils.$('loadingWrap'));
-    page.goto(0);
+    page.goto(11);
   });
 
   page.on('slide-switchEnd',function(allowswipe){
