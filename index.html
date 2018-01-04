@@ -55,7 +55,7 @@ div#loading{margin:15px auto 0;}
 .img00{width:100%;height:300px;background:url(images/01_1.png) no-repeat center center;background-size:435px;top:50%;margin: -30vh 0;}
 .img01{z-index:2; width:100%;height:50px;background: url(images/01_2.png) no-repeat center top;background-size:50px;top:50%;margin-top:
 calc(-30vh + 195px);}
-.img02{animation: fadeout 2s ease-in-out ; width:100%;height:397px;background: url(images/01_3.png) no-repeat center top;background-size:250px;top:50%;margin-left:110px;margin-top: calc(-30vh + 205px);}
+.img02{animation: fadeout 5s ease-in-out ; width:100%;height:397px;background: url(images/01_3.png) no-repeat center top;background-size:250px;top:50%;margin-left:110px;margin-top: calc(-30vh + 205px);}
 .img03{width:100%;height:98px;background:url(images/01_4.png) no-repeat center center;background-size:300px;bottom:30px; left: 14px;}
 
 #frame1{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
@@ -105,14 +105,14 @@ calc(-30vh + 195px);}
   }
 }
 
-#panda{background:url(./imgs/public/all/bg1.jpg) no-repeat center top;background-size:100%;}
+#panda{background:#c9c9c9;}
 .p3-img{position: absolute;top: 10%;}
 /* .p3logo{width: 50%; margin: -9vh 27vw;animation: pulse 1.5s ease 1s infinite normal forwards;} */
 .p3logo{width: 50%; margin: -9vh 27vw;}
 .p3panda{width:75%;margin: 22vh 12vw;}
 .p3earth{width: 92%;margin: 19vh 5vw;animation: 100s rotate linear infinite;}
 
-#text-flash{background:url(./imgs/public/all/flash.gif) no-repeat center top;background-size:100%;}
+#text-flash{background:url(images/flash.gif) no-repeat center top;background-size:100%;}
 
 #chuango{background:url(images/02.png) no-repeat center top;background-size:100%;}
 .line{position: absolute;width: 80%; transform:scale(.55);left: 59px;top: 231px;}
@@ -245,9 +245,9 @@ calc(-30vh + 195px);}
   <!-- 熊猫拜年 -->
    <div id="panda" index="9" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-      <img class="p3-img p3logo" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/logo11.png" alt="">
-      <img class="p3-img p3panda" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="./imgs/public/P 300/p3panda.png" alt="">
-      <img class="p3-img p3earth" src="./imgs/public/P 300/earth.png" alt="">
+      <img class="p3-img p3logo" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="images/logo11.png" alt="">
+      <img class="p3-img p3panda" style="animation: panda 2.5s ease 0s 1 normal forwards;" src="images/p3panda.png" alt="">
+      <img class="p3-img p3earth" src="images/earth.png" alt="">
     </div>
   </div>
 
@@ -263,9 +263,9 @@ calc(-30vh + 195px);}
   <!-- 北京地图 -->
   <div id="map" index="11" class="EasySlide-slides slides">
     <div class="EasySlide-groups groups" gIndex="0">
-      <img class="img-pic map1 hide" layerid="framemap1" src="imgs/public/P 600/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
-      <img class="img-pic map2 hide" layerid="framemap2" src="imgs/public/P 600/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
-      <img class="img-pic map3 hide" layerid="framemap3" src="imgs/public/P 600/gps_03.png" alt="" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">
+      <img class="img-pic map1 hide" layerid="framemap1" src="images/gps_01.png" alt="" style="animation: mypulse 1.5s ease 1s 1 normal forwards;">
+      <img class="img-pic map2 hide" layerid="framemap2" src="images/gps_02.png" alt="" style="animation: mypulse 1.5s ease 2s 1 normal forwards;">
+      <img class="img-pic map3 hide" layerid="framemap3" src="images/gps_03.png" alt="" style="animation: mypulse 1.5s ease 3s 1 normal forwards;">
 
       <img class="img-pic map4 hide" layerid="framemap3" src="images/map4.png" alt="" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">
     </div>
@@ -299,11 +299,11 @@ calc(-30vh + 195px);}
 <div id="loadingWrap">
   <!-- <img id="bg" src="./imgs/public/all/bg1.jpg" alt=""> -->
   <div>
-    <img id="panda-img" src="./imgs/public/all/IFS Panda.png" alt="">
-    <br/><img id="gif" src="./imgs/public/all/loading.gif" alt="">
+    <img id="panda-img" src="images/ifspanda.png" alt="">
+    <br/><img id="gif" src="images/loading.gif" alt="">
     <!-- <h2 id="load-text">loading...</h2> -->
+    <div id="loading">0%</div>
   </div>
-  <div id="loading">0%</div>
 </div>
 
 </body>
@@ -325,6 +325,7 @@ calc(-30vh + 195px);}
 
   var resourceImg = [
     "01.png", "01_1.png", "01_2.png", "01_3.png",
+    "flash.gif", "logo11.png", "earth.png", "p3panda.png", "ifspanda.png", "loading.gif",
     "02.png", "03.jpg", "03_1.png", "03_2.png", "03_3.png", 
     "03_4.png", "03_5.png", "03_6.png", "04.png", "05.png",
     "511.png", "512.png", "513.png", "521.png", "522.png", 
@@ -418,7 +419,7 @@ calc(-30vh + 195px);}
 
   page.on('loaded',function(){
     utils.hide(utils.$('loadingWrap'));
-    // page.goto();
+    page.goto(0);
   });
 
   page.on('slide-switchEnd',function(allowswipe){
