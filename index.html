@@ -37,7 +37,7 @@ div#loading{margin:15px auto 0;}
 
 #weixin_bg{position:absolute;left:0;top:0;width:100%;height:100%;z-index:998;background:rgba(0,0,0,.6);display:none;}
 .share_icon{clear:both; padding:10px; text-align:right;}
-#loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#060a10;}
+#loadingWrap{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999;font-size:14px; line-height:20px; -webkit-transition:-webkit-transform 0.4s ease;background:#818387;}
 #loadingWrap div{margin:170px auto 0; text-align:center;}
 
 #panda-img{position: absolute;left:30%;top: 30%;width: 37%;}
@@ -121,16 +121,16 @@ calc(-30vh + 195px);}
 #map{background:url(images/maps.jpg) no-repeat center top;background-size:100%;}
 .flayer {display: none;}
 .img-pic{width: 100%;}
-.map1{width: 10%; position: absolute;top: 10vh;margin: -7vh 20vw;}
-.map2{width: 10%; position: absolute;top: 10vh;margin: 63vh 53vw;}
-.map3{width: 10%; position: absolute;top: 10vh;margin: -7vh 66vw;}
+.map1{width: 10%; position: absolute;top: 10vh;margin: 26vh 20vw;}
+.map2{width: 10%; position: absolute;top: 10vh;margin: 60vh 34vw;}
+.map3{width: 10%; position: absolute;top: 10vh;margin: 27vh 40vw;}
 
 .map4{width: 100%; position: absolute;bottom: 0;}
 
 
-#framemap1{width: 80%;position: absolute;top: 10vh;margin: 1vh 7vw;}
-#framemap2{width: 90%;position: absolute;top: 10vh;margin: 46vh 5vw;}
-#framemap3{width: 80%;position: absolute;top: 10vh;margin: 0vh 13vw;}
+#framemap1{width: 73%;position: absolute;top: 10vh;margin: 32vh 9vw;}
+#framemap2{width: 75%;position: absolute;top: 10vh;margin: 46.6vh 0vw;}
+#framemap3{width: 73%;position: absolute;top: 10vh;margin: -4vh 30vw;}
 
 
 #qrcode{background:url(images/03.jpg) no-repeat center top;background-size:100%;}
@@ -270,9 +270,9 @@ calc(-30vh + 195px);}
       <img class="img-pic map4 hide" layerid="framemap3" src="images/map4.png" alt="" style="animation: mypulse 1.5s ease 4s 1 normal forwards;">
     </div>
 
-    <img id="framemap1" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap2" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
-    <img id="framemap3" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="imgs/public/P 600/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap1" onclick="baidu('http://api.map.baidu.com/marker?location=39.964919,116.295514&title=川货商圈&content=金源新燕莎MALL&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="images/gps01.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap2" onclick="baidu('http://api.map.baidu.com/marker?location=39.815811,116.351487&title=川货农产品市场&content=北京新发地农产品批发市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="images/gps02.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
+    <img id="framemap3" onclick="baidu('http://api.map.baidu.com/marker?location=39.967159,116.351388&title=川货展销中心&content=北京二商集团四道口专业市场&output=html&src=四川商投|myApp')" class="EasySlide-flayer flayer framemap" src="images/gps03.png" alt="" style="animation: mypulse 1.5s ease 0s 1 normal forwards;">
   </div>
 
   <!-- 二维码  -->
@@ -297,11 +297,11 @@ calc(-30vh + 195px);}
 
 
 <div id="loadingWrap">
-  <img id="bg" src="./imgs/public/all/bg1.jpg" alt="">
+  <!-- <img id="bg" src="./imgs/public/all/bg1.jpg" alt=""> -->
   <div>
     <img id="panda-img" src="./imgs/public/all/IFS Panda.png" alt="">
     <br/><img id="gif" src="./imgs/public/all/loading.gif" alt="">
-    <h2 id="load-text">loading...</h2>
+    <!-- <h2 id="load-text">loading...</h2> -->
   </div>
   <div id="loading">0%</div>
 </div>
@@ -418,7 +418,7 @@ calc(-30vh + 195px);}
 
   page.on('loaded',function(){
     utils.hide(utils.$('loadingWrap'));
-    page.goto(0);
+    // page.goto();
   });
 
   page.on('slide-switchEnd',function(allowswipe){
